@@ -12,7 +12,7 @@
 * **Recherche Récursive** : Localise automatiquement tous les fichiers `requirements.txt` dans les sous-dossiers.
 * **Analyse Intelligente** : Supporte les opérateurs de version `==`, `>=` et `~=`.
 * **Filtrage Précis** : Analyse les rapports de vulnérabilité pour ne retenir que ceux impactant vos contraintes spécifiques.
-* **Intégration CI/CD** : Le script retourne un code de sortie `1` en cas de vulnérabilités **HIGH** ou **CRITICAL**, idéal pour bloquer des pipelines de déploiement non sécurisés.
+* **Intégration CI/CD** : Le script retourne un code de sortie `1` en cas de vulnérabilités **HIGH** ou **CRITICAL**, idéal pour bloquer des pipelines de déploiement non sécurisés. Une Github Action a été configurée pour faire un scan de vulnérabilités sur la branche de prod à chaque commit/ pull request
 
 ### Installation
 ```bash
@@ -39,8 +39,7 @@ Unlike basic scanners, SafeDeps understands Python versioning logic, ensuring th
 * **Recursive Discovery**: Automatically traverses your project tree to find all dependency files.
 * **Version-Aware Analysis**: Intelligent parsing of `==` (fixed), `>=` (minimum), and `~=` (compatible) operators.
 * **Smart Filtering**: Dynamically filters API results to pinpoint vulnerabilities that specifically impact your environment.
-* **DevOps Integration**: Designed for CI/CD pipelines with automated exit codes (Exit 1 on Critical/High risks).
-* **Data-Driven**: Leverages `pandas` for structured analysis and clear reporting.
+* **DevOps Integration**: Designed for CI/CD pipelines with automated exit codes (Exit 1 on Critical/High risks). A Github Action has been configured to scan the prod branch for vulnerabilities on each commit/pull request.
 
 
 
