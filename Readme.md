@@ -16,7 +16,7 @@
 
 ### Installation
 ```bash
-git clone [https://github.com/Aure-M/SafeDeps](https://github.com/Aure-M/SafeDeps/)
+git clone https://github.com/Aure-M/SafeDeps
 cd SafeDeps
 pip install requests pandas
 python vulnerability_scanner.py
@@ -52,7 +52,7 @@ Unlike basic scanners, SafeDeps understands Python versioning logic, ensuring th
 
 ### Installation
 ```bash
-git clone [https://github.com/Aure-M/SafeDeps](https://github.com/Aure-M/SafeDeps/)
+git clone https://github.com/Aure-M/SafeDeps
 cd SafeDeps
 pip install requests pandas
 python vulnerability_scanner.py
