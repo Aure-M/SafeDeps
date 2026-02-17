@@ -1,8 +1,9 @@
+# Envlevez les commentaires sur les autres modules pour tester le cas où les vulnérabilités détectées sont importantes
 # --- Dépendances avec versions figées (Le plus sûr pour la prod) ---
-scikit-learn
+#scikit-learn
 requests==2.28.1
 pandas==1.5.3
-gunicorn==20.1.0
+#gunicorn==20.1.0
 
 # --- Dépendances avec contraintes souples (Risque de "Drift") ---
 # Installe la version 3.0.0 ou toute version supérieure
@@ -10,4 +11,4 @@ flask>=3.0.0
 
 # Installe une version compatible (souvent utilisé pour éviter les ruptures)
 # Ici : accepte 2.1.0, 2.1.1... mais PAS la 2.2.0
-cryptography~=2.1.0
+#cryptography~=2.1.0
